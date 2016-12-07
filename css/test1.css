@@ -1,0 +1,76 @@
+
+<!--标题模式-->
+
+
+body{
+	
+	background: white;
+	font-family: georgia, garamond,serif; 
+	font-size: 11pt;
+	foreground:#A4A400;
+	
+}
+
+.headings{
+	background: #F0F0F0; 
+    font-family: "century gothic",futura,verdana,sans-serif;
+    font-size: 22pt ;
+    color: #A4A400;
+    font-weight:bold;
+    text-decoration: underline; 
+    text-align: center;
+}
+
+.otherheading{
+	background: #F0F0F0; 
+    font-size: 18pt ;
+    color: #A4A400;
+    text-decoration: underline; 
+}
+
+
+
+.olnonestyle{
+	padding: 0;
+	margin: 0;
+	font-family: georgia, garamond,serif; 
+	font-size: 11pt;
+	list-style: none;
+}
+
+.oldiamstyle{
+	list-style: diam;
+}
+/*
+ 用户评价样式
+ * */
+.userComment {
+	background: ;
+	font:italic;
+	background: #FFFC8;
+}
+
+/**
+ * 引用
+ */
+.blockquote_style{
+	font-family: georgia, garamond,serif; 
+	font-size: 11pt;
+	font-style: italic;
+	background: #FFFFC8;
+}
+/*
+ linkfont sytle   
+ 
+ attention: don not use font again ,it is not used from html4
+ use font-family and font sytle  to set the styel of front
+ * */
+.linkfont_style{
+	font-family: georgia, garamond,serif; 
+	font-size: 11pt;
+	color: #A4A400;
+    text-decoration: underline;
+}
+
+
+
