@@ -2,17 +2,36 @@
 <html>
 	
 	<head>
+		
+		<!--编码格式-->
 		<meta charset="utf-8" />
+		<!--设置标题栏-->
 		<title>web2.0技术开发</title>
+		<!--
+		rel: 当前文档和被连接文档之间的关系  			
+		type ：被链接文档的MIME类型（Multipurpose Internet Mail Extensions ）多用途互联网邮件扩展类型
+		href ：被链接文档的位置
+		-->
+        <!--添加url前面的小图标-->
+		<link rel="icon"  type="image/gif"  href="../img/pie_icon.gif"/>
 		
+		<!--规定样式-->
 		<link rel="stylesheet" type="text/css" href="../css/test1.css" />
-		
+
 	</head>
 	
-	<body class="body">
+	<body style="background:url(../img/silverware.jpg);
+		  background-repeat: repeat;
+		  background-attachment: fixed;
+		  font-family: georgia, garamond, serif;
+		  font-size: 11pt;
+		  foreground: #A4A400;
+		  ">
 		
+		<!--自定义块，用于展示标题-->
 		<div class="headings" > Grandma's Lemon Meringue Pie </div>
 		
+		<!--换行-->
 		<br/>
 		
 		<!--图片标签，必须包含至少 两个属性 src（路径） alt（替代文本） -->	
@@ -21,7 +40,7 @@
         <br /><br />
 		
 		<!--图片下面的文本-->
-		
+		<!--有序链表-->
 		<ol class="olnonestyle">
 			<li>One 9-inch pie</li>
 			<li>30 Min - Prep time</li>
@@ -34,7 +53,7 @@
 		<hr><br />
 		
 		<div class="otherheading">INGREDIENTS</div>
-		<ul style="font-family: georgia,garamond,serif;font-size: 11pt;">
+		<ul class="ulicon">
 			<li>1 cup white sugar</li>
 		    <li>2 tablespoons all-purpose flour</li>
 		    <li>3 tablespoons cornstarch</li>
@@ -51,11 +70,11 @@
 		<!--分割线-->
 		<hr />
 		
-	<div class="otherheading">DIRECTIONS</div>
+	  <div class="otherheading">DIRECTIONS</div>
 	    <ol type="1" style="font-family: georgia,garamond,serif;font-size: 11pt;" >
-		<li><strong> Preheat Oven</strong> :Preheat oven to 350 degrees F(175 degrees C).</li>
-		<li><strong> Make Lemon Filling</strong>: In a medium saucepan</li>
-		    <ul type="circle">
+		<li><strong> Preheat Oven: </strong>Preheat oven to 350 degrees F(175 degrees C).</li>
+		<li><strong> Make Lemon Filling:</strong> In a medium saucepan</li>
+		    <ul class="ulicon">
 		    <li>Whisk together 1 cup sugar,flour,cornstarch,and salt.</li>
 		    <li>Stir in water,lemon juice and lemon zest.</li>
 		    <li>Cook over medium-high heat,stirring frequently,until mixture comes to a boil</li>
@@ -64,9 +83,16 @@
 		    <li>Whisk egg yolk mixture back into remaining sugar mixture</li>
 		    <li>Bring to a boil and continue to cook while stirring constantly until thick</li>
 		    </ul>
+		<li><strong> Make Meringue:</strong> In a medium saucepan</li>
+		    <ul class="ulicon">
+		    <li>Whip egg whites until foamy.</li>
+		    <li>Add sugar gradually,and continue to whip until stiff peaks form.</li>
+		    <li>Spread meringue over pie,sealing the edges at the crust.</li>
+		    </ul>
+		<li><strong> Bake:</strong>Bake in preheated oven for 10 minutes,or until meringue is golden brown.</li>
 	    </ol>
 	  
-</div>
+       </div>
 		
 		<!--用户评价-->
 		<div class="otherheading"> USER COMMENTS</div>
