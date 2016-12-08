@@ -1,14 +1,13 @@
 
 
 
-<!--标题模式--> 
-
-body{
+/*<!--标题模式-->*/ 
+body{ 
 	/*background: white;*/
 	/*设置背景图片：这里用的是绝对地址：完全写好的绝对地址*/
-	background: url(../img/silverware.jpg);
+	background-image: url(../img/silverware.jpg);
 	/*图片的重复方式，水平竖直都重复*/
-	background-repeat:repeat-x,repeat-y;
+	background-repeat:repeat;
 	/*图片不会移动，即使整个界面上下滚动*/
 	background-attachment: fixed;
 	/*设置字体家族，浏览器会依次的从前面开始查找自己能用的字体*/
@@ -71,11 +70,8 @@ body{
 }
 
 /*
- linkfont sytle   
- 
- attention: don not use font again ,it is not used from html4
- use font-family and font sytle  to set the styel of front
- * */
+ 不要用font属性：在html4的时候已经被弃用了。
+  */
 
 .linkfont_style {
 	font-family: georgia, garamond, serif;
