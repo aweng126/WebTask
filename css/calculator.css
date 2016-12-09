@@ -1,28 +1,37 @@
-
-#calcontent{
+#calcontent {
 	margin: 0 auto;
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	margin-top: 150px;
-	background: url(../img/background.png);
+	background: url(../img/generaloverview.png);
 }
 
-table{
+table {
 	margin: 0 auto;
+	margin-top: 20px;
 }
 
-
-#calShow{
+#calShow {
+	margin-top: 40px;
+	margin-left: 10px;
 	height: 30px;
-	width: 296px;		
+	width: 280px;
+	text-align: end;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 /*  两个类选择器，
  * 中间若是有逗号，选择这两个类的交，
  * 如果之间没有，则选择两个类的并*/
-.numbtn,.optbtn{
+
+.numbtn,
+.optbtn {
 	height: 50px;
 	width: 50px;
-	font-size: 20px;
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	background: transparent;
+	border: 2px solid gray;
 }
-

@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title> 简单计算器</title>
+		<title>简单计算器</title>
 	</head>
+
+	<!--引入css-->
+	<link rel="stylesheet" href="../css/calculator.css" type="text/css" />
+	<!--引入js-->
+	<script type="text/javascript" src="../js/calculator.js"></script>
+
 	<body>
-		
-		<div id="content">
-			
-	    <div  id="showresult">
-	    	
-	    </div>
-			
-		 <div id="buttons">
-		 	  <div class="button",id="7">7</div>
-		 	  
-		 	
-		 	
-		 </div>
-	    
-			
-			
+		<div id="calcontent">
+			<table>
+				<input type="text" id="calShow" />
+				<tr>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="7" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="8" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="9" /></td>
+					<td><input type="button" onclick="add(this)" class="optbtn" value="/" /></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="4" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="5" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="6" /></td>
+					<td><input type="button" onclick="add(this)" class="optbtn" value="*" /></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="1" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="2" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="3" /></td>
+					<td><input type="button" onclick="add(this)" class="optbtn" value="-" /></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="0" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="." /></td>
+					<td><input type="button" onclick="calback()" class="optbtn" value="←" /></td>
+					<td><input type="button" onclick="add(this)" class="optbtn" value="+" /></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" onclick="add(this)" class="numbtn" value="(" /></td>
+					<td><input type="button" onclick="add(this)" class="numbtn" value=")" /></td>
+					<td><input type="button" onclick="clears()" class="optbtn" value="CE" /></td>
+					<td><input type="button" onclick="results()" class="optbtn" value="=" /></td>
+				</tr>
+
+			</table>
+
 		</div>
-		
+
 	</body>
+
 </html>
