@@ -1,9 +1,10 @@
 #calcontent {
 	margin: 0 auto;
-	width: 300px;
-	height: 400px;
-	margin-top: 150px;
-	background: url(../img/generaloverview.png);
+	width: 280px;
+	height: 430px;
+	margin-top: 100px;
+	border: 2px solid gray;
+/*	background: url(../img/generaloverview.png);*/
 }
 
 table {
@@ -12,10 +13,10 @@ table {
 }
 
 #calShow {
-	margin-top: 40px;
-	margin-left: 10px;
+	display: block;
+	margin: 0 auto;
 	height: 30px;
-	width: 280px;
+	width: 210px;
 	text-align: end;
 	font-size: 20px;
 	font-weight: bold;
@@ -30,8 +31,13 @@ table {
 	height: 50px;
 	width: 50px;
 	font-size: 25px;
-	color: white;
+	/*color: white;*/
+	color: black;
 	font-weight: bold;
 	background: transparent;
 	border: 2px solid gray;
+}
+
+h1{
+	text-align: center;
 }
