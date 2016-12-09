@@ -1,0 +1,28 @@
+
+#calcontent{
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	margin-top: 150px;
+	background: url(../img/background.png);
+}
+
+table{
+	margin: 0 auto;
+}
+
+
+#calShow{
+	height: 30px;
+	width: 296px;		
+}
+
+/*  两个类选择器，
+ * 中间若是有逗号，选择这两个类的交，
+ * 如果之间没有，则选择两个类的并*/
+.numbtn,.optbtn{
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+}
+
