@@ -66,4 +66,19 @@ function calback() {
 
 }
 
-document.getElementsByClassName('numbtn').
+$(document).ready(function() {
+
+	$('.numbtn,.optbtn').hover(function() {
+		$(this).animate({
+//			width: '150%',
+//			height:'200%',
+			'font-size':'250%',	
+		}, 500)
+	}, function() {
+		$(this).animate({
+//			width: '100%'
+			'font-size':'150%',		
+		}, 500)	
+	});
+
+});
