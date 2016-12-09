@@ -4,4 +4,117 @@ body{
 	margin: 0;
 	padding: 0;
 }
+/**{
+	border:2px #f00 solid;
+}*/
+#bar{
+	background: url(../img/bannerbackground.png);
+	background-repeat: repeat-x;
+	align-content: center; 
+	height: 50px;
+	
+}   
+ 
+#leftcomment{
+	 width: 47%;
+	 margin-left: 2%;
+	 margin-right: 2%; 
+	 /*margin-top: 3em;*/
+	 display: inline-block;
+	 float: left;
+}
 
+#rightcomment{
+	width: 47%; 
+	margin-right: 2%;
+	float: left;
+	/*margin-top: 3em;*/
+	display: inline-block;
+}
+
+.commentquote{
+	border:2px solid gray;
+	background: #E1D697;
+	padding: 8px;
+	font-size: 8pt; 
+	font-weight: bold;
+}
+
+.imgquote{
+	margin-right: 5px;
+	float: left;
+}
+
+.imgcritic{
+	margin-right: 5px;
+	float: left;
+}
+
+.criticperson{
+	float: left; 
+	font-style:italic;
+	margin-top: 0%;
+	font-size: 8pt;
+}
+
+
+.singlecomment{
+	/*margin-bottom: 3em;*/
+}
+
+
+.singlecomment::after{
+	clear: both;
+	content: '.';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+
+#content::after{
+	content: '.';
+	display: block;
+	width:0px;
+	height: 0px;
+	visibility: hidden;
+	clear: both;
+}
+
+#comment{
+	display: inline-block;
+}
+
+#file_info{
+	margin-left: 10px;
+    font-family: arial,sans-serif;
+    font-size: 8pt;
+}
+
+#file_info dt{
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+#right{
+	background: #A2B964;
+}
+
+#bottombar{
+	text-align: center;
+    margin-bottom: 5px; 
+    background: #A2B964;
+    height: 20px;
+    clear: both;
+}
+
+#bottombar:after{
+	content: '.';
+	display: block;
+	width:0px;
+	height: 0px;
+	visibility: hidden;
+
+}
