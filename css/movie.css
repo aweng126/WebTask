@@ -6,6 +6,9 @@ body{
 	font-size: 8pt;
 }
 
+/*
+ * 最上方的bar
+ */
 #topbar{
 	background: url(../img/bannerbackground.png);
 	background-repeat: repeat-x;
@@ -13,10 +16,22 @@ body{
 	height: 50px;	
 }   
  
+/**
+ *content右半部分
+ */ 
+#right{
+	background: #A2B964;
+}
+ 
+ 
+ /**
+  * 内容左下角评论部分
+  */
  #comment{
 	display: inline-block;
 }
  
+ /*评论左半部分和右半部分*/
 #leftcomment,#rightcomment{
 	 width: 47%;
 	 margin-right: 2%; 
@@ -30,7 +45,15 @@ body{
 }
 
 
-.commentquote{
+/**
+ * 单个comment
+ */
+.singlecomment{
+	margin-bottom: 3em;
+}
+
+
+.singlecomment .commentquote{
 	border:2px solid gray;
 	background: #E1D697;
 	padding: 8px;
@@ -38,38 +61,24 @@ body{
 	font-weight: bold;
 }
 
-.commentquote img{
+.singlecomment .commentquote img{
 	margin-right: 5px;
 	float: left;
 }
 
-
-.singlecomment{
-	margin-bottom: 3em;
+.singlecomment .commentor {
+	font-style: italic;
 }
 
-
-.singlecomment::after{
-	clear: both;
-	content: '.';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    visibility: hidden;
-    clear: both;
-    display: block;
+.singlecomment .commentor img{
+	margin-right: 5px;
+	float: left;
+	display: inline-block;
 }
 
-/*#content::after{
-	content: '.';
-	display: block;
-	width:0px;
-	height: 0px;
-	visibility: hidden;
-	clear: both;
-}*/
-
-
+/**
+ * 右下角电影信息部分
+ */
 #file_info{
 	margin-left: 10px;
     font-family: arial,sans-serif;
@@ -81,38 +90,10 @@ body{
 	margin-top: 1em;
 }
 
-#right{
-	background: #A2B964;
-}
 
-#bottombar{
-	text-align: center;
-    margin-bottom: 5px; 
-    background: #A2B964;
-    height: 20px;
-    clear: both;
-    margin-bottom: 0px;
-}
-
-#bottombar:after{
-	content: '.';
-	display: block;
-	width:0px;
-	height: 0px;
-	visibility: hidden;
-}
-
-.commentor img{
-	margin-right: 5px;
-	float: left;
-	display: inline-block;
-}
-
-.commentor {
-	font-style: italic;
-}
-
-
+/**
+ * 内容界面左上角的bar
+ */
 #contentbar{
 	background-image: url(../img/rottenbackground.png);
 	background-repeat: repeat;			
@@ -133,4 +114,16 @@ body{
 	color: white;
 	float: left;
 	margin-top: 58px;
+}
+
+/**
+ * 最下方的bar
+ */
+#bottombar{
+	text-align: center;
+    margin-bottom: 5px; 
+    background: #A2B964;
+    height: 20px;
+    clear: both;
+    margin-bottom: 0px;
 }
