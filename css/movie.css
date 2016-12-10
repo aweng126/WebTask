@@ -5,31 +5,30 @@ body{
 	padding: 0;
 	font-size: 8pt;
 }
-/**{
-	border:2px #f00 solid;
-}*/
-#bar{
+
+#topbar{
 	background: url(../img/bannerbackground.png);
 	background-repeat: repeat-x;
 	align-content: center; 
-	height: 50px;
-	
+	height: 50px;	
 }   
  
-#leftcomment{
+ #comment{
+	display: inline-block;
+}
+ 
+#leftcomment,#rightcomment{
 	 width: 47%;
-	 margin-left: 2%;
 	 margin-right: 2%; 
 	 display: inline-block;
 	 float: left;
 }
 
-#rightcomment{
-	width: 47%; 
-	margin-right: 2%;
-	float: left;
-	display: inline-block;
+ 
+#leftcomment{
+	 margin-left: 2%;
 }
+
 
 .commentquote{
 	border:2px solid gray;
@@ -61,18 +60,15 @@ body{
     display: block;
 }
 
-#content::after{
+/*#content::after{
 	content: '.';
 	display: block;
 	width:0px;
 	height: 0px;
 	visibility: hidden;
 	clear: both;
-}
+}*/
 
-#comment{
-	display: inline-block;
-}
 
 #file_info{
 	margin-left: 10px;
@@ -114,4 +110,27 @@ body{
 
 .commentor {
 	font-style: italic;
+}
+
+
+#contentbar{
+	background-image: url(../img/rottenbackground.png);
+	background-repeat: repeat;			
+	background-origin: border-box;
+	height: 83px;			
+}
+
+#contentbar img{
+	float: left;
+}
+
+#contentbar #persentstyle{
+	font-size: 48pt; color: red;font-weight: bold; float: left;margin-top: 5px
+}
+
+#contentbar #reviewtotal{
+	font-size: 8pt; 
+	color: white;
+	float: left;
+	margin-top: 58px;
 }
